@@ -4,4 +4,4 @@ uv = "0.13.8"
 
 [tasks.check]
 description = "Install, lint, and test"
-run = "uv sync --frozen && uv run ruff check . && uv run pytest"
+run = "uv sync --locked && uv run --locked ruff check . && uv run --locked pytest"
