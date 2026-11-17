@@ -1,0 +1,7 @@
+[tools]
+python = "3.15.2"
+uv = "0.13.8"
+
+[tasks.check]
+description = "Install, lint, and test"
+run = "uv sync --locked && uv run --locked ruff check . && uv run --locked pytest"
